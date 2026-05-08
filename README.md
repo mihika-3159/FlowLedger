@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ FlowLedger
 
-## Getting Started
+**The Enterprise Workflow ROI & Efficiency Audit Platform.**
 
-First, run the development server:
+FlowLedger is a powerful internal tool designed for operational leaders to map, analyze, and optimize business processes. By combining rule-based logic with Gemini 1.5 Flash AI, FlowLedger identifies operational bottlenecks, calculates the real-world cost of manual waste, and generates actionable automation roadmaps.
 
+![FlowLedger Dashboard](/placeholder-dashboard.png) *Note: Run the app to see the live animated dashboard.*
+
+## 🚀 Key Features
+
+-   **Intelligent Workflow Mapping**: Visualize complex multi-departmental processes using interactive React Flow canvases.
+-   **AI-Powered Efficiency Audit**: Automatically detect approval delays, manual repetition, and duplicate work using the Gemini 1.5 Flash engine.
+-   **Dynamic ROI Calculator**: Simulate potential savings by adjusting hourly rates and team efficiency gains in real-time.
+-   **Automation Backlog**: Prioritized recommendations (P0-P3) categorized by effort and impact.
+-   **Actionable Roadmaps**: Interactive multi-phase implementation plans with checklists and timelines.
+-   **Zero-Backend Demo**: Fully functional "Demo Mode" using LocalStorage persistence—ready for instant presentation.
+
+## 🛠 Tech Stack
+
+-   **Framework**: Next.js 15+ (App Router)
+-   **Language**: TypeScript
+-   **Styling**: Tailwind CSS 4.0 + Shadcn/UI
+-   **Animations**: Framer Motion
+-   **Visualization**: Recharts & @xyflow/react (React Flow)
+-   **AI Engine**: Google Gemini 1.5 Flash API
+
+## 🏁 Getting Started
+
+### 1. Prerequisites
+- Node.js 20+
+- A Google Gemini API Key (Optional, fallback engine provided)
+
+### 2. Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd flowledger
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Configuration
+Create a `.env.local` file in the root directory:
+```env
+NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Run Development Server
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the application.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💡 How to Demo
 
-## Learn More
+1.  **Load Demo Data**: Click the "Load Demo Data" button in the header to populate the system with 5 realistic operational scenarios.
+2.  **Explore the Dashboard**: View the aggregated waste across departments and the potential $1M+ in quick-win savings.
+3.  **Run an Audit**: Go to "Workflows", select "Monthly Financial Closing", and click "Run Efficiency Audit". Watch the AI analyze the process in real-time.
+4.  **Visualize the Map**: Check the "Workflow Map" to see highlighted red edges where bottlenecks occur.
+5.  **Build a Plan**: From the analysis results, click "Build Action Plan" to see the step-by-step roadmap for improvement.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with ❤️ by the FlowLedger Team during Internal Tools Hacks.
