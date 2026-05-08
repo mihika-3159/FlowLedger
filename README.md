@@ -59,4 +59,4 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ---
 
-Built with ❤️ by the FlowLedger Team during Internal Tools Hacks.
+Built with ❤️ by Mihika Singh during Internal Tools Hacks.
