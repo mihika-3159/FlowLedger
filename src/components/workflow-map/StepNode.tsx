@@ -12,10 +12,10 @@ import {
   Unlock
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import type { WorkflowStep } from '@/lib/types';
+import type { WorkflowStep, Department } from '@/lib/types';
 import { DEPARTMENT_COLORS } from '@/lib/constants';
 
-export const StepNode = memo(({ data, selected }: NodeProps<{ step: WorkflowStep, isBottleneck: boolean }>) => {
+export const StepNode = memo(({ data, selected }: NodeProps<any>) => {
   const { step, isBottleneck } = data;
 
   return (
@@ -37,9 +37,9 @@ export const StepNode = memo(({ data, selected }: NodeProps<{ step: WorkflowStep
             variant="outline" 
             className="h-5 px-1.5 text-[9px] font-bold uppercase tracking-widest"
             style={{ 
-              color: DEPARTMENT_COLORS[step.department], 
-              borderColor: `${DEPARTMENT_COLORS[step.department]}33`,
-              backgroundColor: `${DEPARTMENT_COLORS[step.department]}11`
+              color: DEPARTMENT_COLORS[step.department as Department], 
+              borderColor: `${DEPARTMENT_COLORS[step.department as Department]}33`,
+              backgroundColor: `${DEPARTMENT_COLORS[step.department as Department]}11`
             }}
           >
             {step.department}

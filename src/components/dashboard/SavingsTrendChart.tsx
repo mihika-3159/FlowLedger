@@ -29,7 +29,7 @@ export function SavingsTrendChart({ data }: Props) {
           <YAxis axisLine={false} tickLine={false} tick={{ fill: 'rgba(255,255,255,0.3)', fontSize: 11 }} tickFormatter={(v) => `$${(v / 1000).toFixed(0)}k`} />
           <Tooltip
             contentStyle={{ background: '#0d0d14', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', fontSize: '12px', color: '#fff' }}
-            formatter={(value: number) => [`$${value.toLocaleString()}`, '']}
+            formatter={(value: any) => [`$${value?.toLocaleString()}`, '']}
           />
           <Area type="monotone" dataKey="projected" stroke="#6366f1" fill="url(#projectedGrad)" strokeWidth={2} name="Projected" />
           <Area type="monotone" dataKey="actual" stroke="#10b981" fill="url(#actualGrad)" strokeWidth={2} name="Actual" />

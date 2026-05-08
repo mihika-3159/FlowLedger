@@ -29,7 +29,7 @@ export function DepartmentWasteChart({ data }: Props) {
             </Pie>
             <Tooltip
               contentStyle={{ background: '#0d0d14', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', fontSize: '12px', color: '#fff' }}
-              formatter={(value: number) => [`${value} hrs/wk`, 'Waste']}
+              formatter={(value: any) => [`${value} hrs/wk`, 'Waste']}
             />
           </PieChart>
         </ResponsiveContainer>

@@ -8,6 +8,8 @@ import { BottleneckCard } from '@/components/analysis/BottleneckCard';
 import { CostCalculator } from '@/components/analysis/CostCalculator';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
+import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { 
   Sparkles, 
   ArrowLeft, 
@@ -268,8 +270,3 @@ export default function AnalysisPage() {
   );
 }
 
-const Badge = ({ children, className }: { children: React.ReactNode, className?: string }) => (
-  <div className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium border ${className}`}>
-    {children}
-  </div>
-);

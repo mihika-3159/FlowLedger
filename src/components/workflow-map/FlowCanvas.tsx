@@ -17,11 +17,11 @@ import type { Workflow, AnalysisResult } from '@/lib/types';
 import { Button } from '@/components/ui/button';
 import { Maximize2, Minimize2, ZoomIn, ZoomOut, Zap } from 'lucide-react';
 
-const nodeTypes = {
+const nodeTypes: any = {
   step: StepNode,
 };
 
-const edgeTypes = {
+const edgeTypes: any = {
   bottleneck: BottleneckEdge,
 };
 

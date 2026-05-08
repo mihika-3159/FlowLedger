@@ -19,6 +19,7 @@ import { SavingsTrendChart } from '@/components/dashboard/SavingsTrendChart';
 import { DepartmentWasteChart } from '@/components/dashboard/DepartmentWasteChart';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
+import { Badge } from '@/components/ui/badge';
 import { fadeInUp, staggerContainer } from '@/lib/constants';
 import Link from 'next/link';
 

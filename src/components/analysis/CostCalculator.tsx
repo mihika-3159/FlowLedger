@@ -46,7 +46,7 @@ export function CostCalculator({ initialHours, initialAnnualLoss }: Props) {
             </div>
             <Slider 
               value={[hourlyRate]} 
-              onValueChange={(v) => setHourlyRate(v[0])} 
+              onValueChange={(v) => setHourlyRate(Array.isArray(v) ? v[0] : v)} 
               max={250} 
               min={20} 
               step={5}
@@ -61,7 +61,7 @@ export function CostCalculator({ initialHours, initialAnnualLoss }: Props) {
             </div>
             <Slider 
               value={[teamSize]} 
-              onValueChange={(v) => setTeamSize(v[0])} 
+              onValueChange={(v) => setTeamSize(Array.isArray(v) ? v[0] : v)} 
               max={50} 
               min={1} 
               step={1}
@@ -76,7 +76,7 @@ export function CostCalculator({ initialHours, initialAnnualLoss }: Props) {
             </div>
             <Slider 
               value={[efficiencyGain]} 
-              onValueChange={(v) => setEfficiencyGain(v[0])} 
+              onValueChange={(v) => setEfficiencyGain(Array.isArray(v) ? v[0] : v)} 
               max={100} 
               min={10} 
               step={5}

@@ -21,10 +21,12 @@ export function MobileNav() {
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger asChild>
-        <button className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/[0.06] bg-white/[0.03] lg:hidden">
-          <Menu className="h-5 w-5 text-white/70" />
-        </button>
+      <SheetTrigger
+        render={
+          <button className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/[0.06] bg-white/[0.03] lg:hidden" />
+        }
+      >
+        <Menu className="h-5 w-5 text-white/70" />
       </SheetTrigger>
       <SheetContent side="left" className="w-[260px] border-white/[0.06] bg-[#0a0a0f] p-0">
         <SheetTitle className="sr-only">Navigation Menu</SheetTitle>

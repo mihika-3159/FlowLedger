@@ -8,6 +8,7 @@ import { RoadmapTimeline } from '@/components/action-plan/RoadmapTimeline';
 import { ActionChecklist } from '@/components/action-plan/ActionChecklist';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Separator } from '@/components/ui/separator';
 import { 
   Target, 
   ArrowLeft, 
@@ -194,4 +195,3 @@ export default function ActionPlanPage() {
   );
 }
 
-const Separator = () => <div className="h-px w-full bg-white/[0.06]" />;

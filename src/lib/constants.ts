@@ -107,19 +107,19 @@ export const FREQUENCY_MULTIPLIER: Record<Frequency, number> = {
 // Animation Variants (Framer Motion)
 // ============================================================
 
-export const fadeInUp = {
+export const fadeInUp: any = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] },
+  transition: { duration: 0.4, ease: "easeOut" },
 };
 
-export const fadeIn = {
+export const fadeIn: any = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
   transition: { duration: 0.3 },
 };
 
-export const staggerContainer = {
+export const staggerContainer: any = {
   animate: {
     transition: {
       staggerChildren: 0.08,
@@ -127,14 +127,14 @@ export const staggerContainer = {
   },
 };
 
-export const scaleIn = {
+export const scaleIn: any = {
   initial: { opacity: 0, scale: 0.95 },
   animate: { opacity: 1, scale: 1 },
-  transition: { duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] },
+  transition: { duration: 0.3, ease: "easeOut" },
 };
 
-export const slideInLeft = {
+export const slideInLeft: any = {
   initial: { opacity: 0, x: -20 },
   animate: { opacity: 1, x: 0 },
-  transition: { duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] },
+  transition: { duration: 0.4, ease: "easeOut" },
 };

@@ -15,7 +15,7 @@ export function BottleneckEdge({
   style = {},
   markerEnd,
   data
-}: EdgeProps<{ isBottleneck: boolean, delayText: string }>) {
+}: EdgeProps<any>) {
   const [edgePath, labelX, labelY] = getSmoothStepPath({
     sourceX,
     sourceY,

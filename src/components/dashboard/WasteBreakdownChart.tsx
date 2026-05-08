@@ -26,7 +26,7 @@ export function WasteBreakdownChart({ data }: Props) {
           <YAxis type="category" dataKey="label" axisLine={false} tickLine={false} width={120} tick={{ fill: 'rgba(255,255,255,0.5)', fontSize: 11 }} />
           <Tooltip
             contentStyle={{ background: '#0d0d14', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', fontSize: '12px', color: '#fff' }}
-            formatter={(value: number) => [`${value} hrs/wk`, 'Waste']}
+            formatter={(value: any) => [`${value} hrs/wk`, 'Waste']}
           />
           <Bar dataKey="hours" radius={[0, 4, 4, 0]} barSize={18}>
             {chartData.map((entry, i) => (
