@@ -144,7 +144,7 @@ export function useStore() {
 
 export function useDashboardMetrics() {
   const { state } = useStore();
-  const { analyses, workflows, actionPlans } = state;
+  const { analyses, workflows } = state;
 
   const totalHoursWasted = analyses.reduce((s, a) => s + a.costAnalysis.hoursWastedPerWeek, 0);
   const estimatedAnnualSavings = analyses.reduce((s, a) => s + a.costAnalysis.potentialSavings, 0);
