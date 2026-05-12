@@ -4,8 +4,6 @@
 
 FlowLedger is a powerful internal tool designed for operational leaders to map, analyze, and optimize business processes. By combining rule-based logic with Gemini 1.5 Flash AI, FlowLedger identifies operational bottlenecks, calculates the real-world cost of manual waste, and generates actionable automation roadmaps.
 
-![FlowLedger Dashboard](/placeholder-dashboard.png) *Note: Run the app to see the live animated dashboard.*
-
 ## 🚀 Key Features
 
 -   **Intelligent Workflow Mapping**: Visualize complex multi-departmental processes using interactive React Flow canvases.
